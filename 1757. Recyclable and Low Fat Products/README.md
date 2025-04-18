@@ -1,1 +1,23 @@
-<h2><a href="https://leetcode.com/problems/department-top-three-salaries/">185. Department Top Three Salaries</a></h2><h3>Hard</h3><hr><div class="sql-schema-wrapper__3VBi"><a class="sql-schema-link__3cEg">SQL Schema<svg viewBox="0 0 24 24" width="1em" height="1em" class="icon__1Md2"><path fill-rule="evenodd" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></a></div><div><p>Table: <code>Employee</code></p>
+# [1757. Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/)
+
+## 🧠 Problem Statement:
+Write a SQL query to find the ids of products that are both recyclable and low fat.
+You may return the result in any order.
+
+The table structure is as follows:
+
+**Table: Products**
+| Column Name | Type    |
+|-------------|---------|
+| product_id  | int     |
+| low_fats    | enum    |
+| recyclable  | enum    |
+
+`product_id` is the primary key for this table.  
+`low_fats` is an ENUM of type ('Y', 'N')  
+`recyclable` is an ENUM of type ('Y', 'N')
+
+---
+
+## ✅ Solution Approach:
+We simply filter rows where both `low_fats = 'Y'` and `recyclable = 'Y'`
