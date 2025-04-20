@@ -18,4 +18,4 @@ The table structure is as follows:
 ---
 
 ## ✅ Solution Approach:
-We can use a **recursive common table expression (CTE)** to track the hierarchy of employees and replace their `employee_id` with their **unique identifier** based on the manager chain
+We can use a **recursive common table expression (CTE)** to track the hierarchy of employees and replace their `employee_id` with their **unique identifier** based on the manager chain.
