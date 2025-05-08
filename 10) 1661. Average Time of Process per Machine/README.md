@@ -15,3 +15,9 @@ Write a query to calculate the **average processing time** for each machine. The
 - Each `process_id` has exactly one `start` and one `end` row.
 - Each machine can run multiple processes.
 - Output should have two columns: `machine_id` and `processing_time`.
+
+---
+
+## ✅ Solution Approach:
+We perform a **self join** on the `Activity` table to pair `start` and `end` records for each process.  
+Then, compute the time difference and take the average for each machine.
